@@ -22,7 +22,7 @@ Then configure MongoDB by putting the following command in the terminal and keep
 ```
 ./mongod
 ```
-Now open a new terminal windown and go into the BlogApp folder:
+Now open a new terminal window and go into the BlogApp folder:
 ```
 cd BlogApp
 ```
