@@ -1,4 +1,4 @@
-# Blog-App
+# Blog Web App
 I created this simple Blog Web Application focusing mainly on the RESTful routing architecture. I created this app using
 MongoDB fot the database, Express, EJS for the javascript templating engine, Node.js and Semantic UI for the styling.
 ### Hosted on Heroku
@@ -11,7 +11,7 @@ To get this App up and running on your local machine please clone this repositor
 ### Prerequisites
 Please make sure you have the following on your local machine:
 * [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) - The Database
-* [Node.js](https://nodejs.org/en/) - This is required since it is a node.js application
+* [Node.js](https://nodejs.org/en/) - This is required in order to use node package manager
 
 ## Installing
 After you clone the repository, go into the Blog-App-master folder in the terminal:
@@ -26,7 +26,7 @@ Now open a new terminal window and go into the BlogApp folder:
 ```
 cd BlogApp
 ```
-Then you will Install all the dependeinces by running the following command:
+Then you will Install all the dependencies by running the following command:
 ```
 npm install or npm i
 ```
