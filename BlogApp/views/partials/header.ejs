@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Blog App</title>
+		<title>Dream Blog</title>
 		<link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
 		<link  rel="stylesheet" type="text/css" href="/stylesheets/app.css">
 	</head>
 		<body>
-			<div class="ui fixed inverted menu">
+			<div class="ui large fixed inverted borderless teal menu">
 				<div class="ui container">
-					<div class="header item"><i class="cloud icon"></i>Blog App</div>
+					<div class="header item"><i class="cloud icon"></i>Dream Blog</div>
 					<a href="/" class="item">Home</a>
-					<a href="/blogs/new" class="item">New Post</a>
+					<div class="right menu">
+						<% if(!currentUser){ %>
+    					<a href="/login" class="ui item">Login</a>
+    					<a href="/register" class="ui item">Sign Up</a>
+    					<% } else { %>
+    					<a href="#" class="ui item">Signed in as <%= currentUser.username %></a>
+    					<a href="/blogs/new" class="item">Create Post</a>
+    					<a href="/logout" class="ui item">Logout</a>
+    					<% } %>
+  					</div>
 				</div>
 			</div>
